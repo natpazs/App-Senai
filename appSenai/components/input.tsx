@@ -12,15 +12,17 @@ export default function Input({nome, texto}) {
 const styles = StyleSheet.create({
     container: {
         marginLeft: 25,
-        marginTop: 50,
+        marginTop: 20,
     },
     text: {
-        fontSize: 16,
+        fontSize: 14,
         marginBottom: 10
     },
     input: {
         padding: 10,
         marginRight: 25,
+        fontSize: 11,
+        height: 40,
         backgroundColor: "#F5F5F5"
     }
 

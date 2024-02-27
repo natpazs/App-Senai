@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import Header from '../components/header';
 import Input from '../components/input';
+import Btn from '../components/btn';
 
 
 export default function RecuperarSenha() {
@@ -9,7 +9,8 @@ export default function RecuperarSenha() {
         <View>
             <Header cor="#011E83" texto="Recuperação de senha" ></Header>
             <Text style={styles.texto}>Insira seu e-mail para recuperar a senha!</Text>
-            <Input nome="Email" texto="Inisra seu email:"></Input>
+            <Input nome="Email:" texto="Inisra seu email:"></Input>
+            <Btn texto="Recuperar senha"></Btn>
         </View>
       );
 };

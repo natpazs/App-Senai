@@ -23,12 +23,12 @@ const styles = StyleSheet.create({
         borderBottomLeftRadius: 5,
     },
     logo: {
-        marginTop: 30,
+        marginTop: 20,
     },
    
     text: {
         fontSize: 20,
-        marginTop: 15,
+        marginTop: 10,
         color : "#FFFFFF",
     }
 
