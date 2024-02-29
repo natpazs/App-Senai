@@ -1,8 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, } from 'react-native';
 
+type headerProps ={
+    cor: string,
+    texto: string
+}
 
-export default function Header({cor, texto}) {
+
+export default function Header({cor, texto}:headerProps) {
     return (
         <View style={[styles.container, { backgroundColor: cor }]}>
             <StatusBar style="light"/>

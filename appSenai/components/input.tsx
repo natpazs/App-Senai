@@ -1,6 +1,11 @@
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 
-export default function Input({nome, texto}) {
+type inputProps ={
+    nome: string,
+    texto:string
+}
+
+export default function Input({nome, texto}:inputProps) {
     return (
             <View style={styles.container}>
                 <Text style={styles.text}>{nome}</Text>
