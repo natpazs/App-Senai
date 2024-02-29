@@ -1,6 +1,9 @@
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
 
-export default function Btn({texto}){
+type btnProps={
+  texto: string
+}
+export default function Btn({texto}:btnProps){
     return(
         <TouchableOpacity style={styles.btn}><Text style={styles.texto}>{texto}</Text></TouchableOpacity>
     )
