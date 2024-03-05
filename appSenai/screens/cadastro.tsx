@@ -8,12 +8,12 @@ export default function Cadastro() {
     return (
         <View>
             <Header cor="#FF0000" texto="Cadastre-se" ></Header>
-            <Input nome="Nome:" texto="Inisra seu nome:"></Input>
-            <Input nome="Sobrenome:" texto="Inisra seu sobrenome:"></Input>
-            <Input nome="Email:" texto="Inisra seu email:"></Input>
-            <Input nome="Telefone:" texto="Inisra seu telefone:"></Input>
-            <Input nome="Senha:" texto="Inisra sua senha:"></Input>
-            <Input nome="Confirmar senha:" texto="Inisra sua senha:"></Input>
+            <Input label="Nome:" placeholder="Inisra seu nome:"></Input>
+            <Input label="Sobrenome:" placeholder="Inisra seu sobrenome:"></Input>
+            <Input label="Email:" placeholder="Inisra seu email:"></Input>
+            <Input label="Telefone:" placeholder="Inisra seu telefone:"></Input>
+            <Input label="Senha:" placeholder="Inisra sua senha:" secureTextEntry={true}></Input>
+            <Input label="Confirmar senha:" placeholder="Inisra sua senha:" secureTextEntry={true}></Input>
             <Btn texto="Cadastre-se"></Btn>
         </View>
       );

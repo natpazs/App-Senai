@@ -9,8 +9,8 @@ export default function Login() {
         <View>
             <Header cor="#000000" texto="Login" ></Header>
             <Text style={styles.texto}>Faça Login para Acessar o Sistema!</Text>
-            <Input nome="Email:" texto="Inisra seu email:"></Input>
-            <Input nome="Senha:" texto="Inisra sua senha:"></Input>
+            <Input label="Email:" placeholder="Inisra seu email:" ></Input>
+            <Input label="Senha:" placeholder="Inisra sua senha:" secureTextEntry={true}></Input>
             <Btn texto="Fazer login"></Btn>
             <View style={styles.linksContainer}>
                 <TouchableOpacity><Text style={styles.link}>Cadastre-se</Text></TouchableOpacity>

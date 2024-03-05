@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, TouchableOpacity} from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 
 
 export default function Nav({...props}) {
     return (
-        <View style={styles.container}>
+        <View style={[styles.container, {backgroundColor: props.color}]}>
             <StatusBar style="dark"/>
             <TouchableOpacity>{props.icone}</TouchableOpacity>
+            <Text style={styles.texto}>{props.texto}</Text>
             <TouchableOpacity>{props.icone2}</TouchableOpacity>
         </View>
       );
@@ -18,12 +19,14 @@ export default function Nav({...props}) {
             height: 60,
             flexDirection: "row",
             justifyContent: "space-between",
-            borderBottomWidth: 1,
-            borderBottomColor: "#f5f5f5",
             gap: 10,
             marginTop: 30,
             paddingTop: 10,
             paddingLeft: 20,
             paddingRight: 20
         },
-    })
+        texto: {
+            fontSize: 14,
+            color: "#595959"
+        }
+    });

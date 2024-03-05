@@ -16,9 +16,9 @@ export default function Footer({...props}) {
             flexDirection: "row",
             justifyContent: "center",
             alignItems: "center",
-            gap: 10,
+            gap: 20,
             paddingLeft: 20,
-            paddingRight: 20,
+            paddingRight: 20
         },
 
-    })
+    });

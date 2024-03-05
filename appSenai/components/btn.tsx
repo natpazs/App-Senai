@@ -7,7 +7,7 @@ export default function Btn({texto}:btnProps){
     return(
         <TouchableOpacity style={styles.btn}><Text style={styles.texto}>{texto}</Text></TouchableOpacity>
     )
-}
+};
 
 const styles = StyleSheet.create({
     btn: {

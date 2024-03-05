@@ -9,7 +9,7 @@ export default function RecuperarSenha() {
         <View>
             <Header cor="#011E83" texto="Recuperação de senha" ></Header>
             <Text style={styles.texto}>Insira seu e-mail para recuperar a senha!</Text>
-            <Input nome="Email:" texto="Inisra seu email:"></Input>
+            <Input label="Email:" placeholder="Inisra seu email:"></Input>
             <Btn texto="Recuperar senha"></Btn>
         </View>
       );
