@@ -2,7 +2,7 @@ import { StyleSheet, View, TouchableOpacity} from 'react-native';
 
 export default function Footer({...props}) {
     return (
-        <View style={[styles.container, {backgroundColor: props.cor}]}>
+        <View style={[styles.container, {backgroundColor: props.cor}, {borderTopColor: props.borda}]}>
             <TouchableOpacity >{props.icone}</TouchableOpacity>
             <TouchableOpacity >{props.icone2}</TouchableOpacity>
         </View>
@@ -18,7 +18,8 @@ export default function Footer({...props}) {
             alignItems: "center",
             gap: 20,
             paddingLeft: 20,
-            paddingRight: 20
+            paddingRight: 20,
+            borderTopWidth: 1
         },
 
     });

@@ -5,9 +5,9 @@ import { StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 export default function Nav({...props}) {
     return (
         <View style={[styles.container, {backgroundColor: props.color}]}>
-            <StatusBar style="dark"/>
+            <StatusBar style="light"/>
             <TouchableOpacity>{props.icone}</TouchableOpacity>
-            <Text style={styles.texto}>{props.texto}</Text>
+            <Text style={[styles.texto, {color: props.cor}]}>{props.texto}</Text>
             <TouchableOpacity>{props.icone2}</TouchableOpacity>
         </View>
       );
@@ -16,17 +16,18 @@ export default function Nav({...props}) {
     const styles = StyleSheet.create({
         container: {
             width:"100%",
-            height: 60,
             flexDirection: "row",
             justifyContent: "space-between",
             gap: 10,
-            marginTop: 30,
-            paddingTop: 10,
+            paddingTop: 40,
+            paddingBottom:20,
             paddingLeft: 20,
-            paddingRight: 20
+            paddingRight: 20,
+            alignSelf: "center"
         },
         texto: {
+            marginTop: 5,
             fontSize: 14,
-            color: "#595959"
+            fontWeight: "600"
         }
     });
