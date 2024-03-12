@@ -6,12 +6,13 @@ import Inventario from './screens/inventario';
 import CadastroItem from './screens/cadastroItem';
 import DescItens from './screens/descItens';
 import Scanner from './screens/scanner';
+import Recarregar from './screens/reacarregar';
 
 
 
 export default function App() {
   return (
     <>
-      <Scanner></Scanner>
+      <Recarregar></Recarregar>
     </>
 )}
