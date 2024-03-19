@@ -5,6 +5,7 @@ import Cadastro from './screens/cadastro';
 import Inventario from './screens/inventario';
 import CadastroItem from './screens/cadastroItem';
 import DescItens from './screens/descItens';
+import Editar from './screens/editar';
 import Scanner from './screens/scanner';
 import Recarregar from './screens/reacarregar';
 

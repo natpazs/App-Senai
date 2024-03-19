@@ -29,7 +29,7 @@ export default function Inventario() {
                 <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
                 <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
             </ScrollView>
-                <Botao icn={<Ionicons name="add-circle" size={60} color="#ff0000" />}></Botao>
+            <Botao icn={<Ionicons name="add-circle" size={60} color="#ff0000" />}></Botao>
             <Footer borda="#FF0000" cor="#FF0000" icone={<MaterialCommunityIcons name="camera-flip" size={24} color="white" />} icone2={<FontAwesome5 name="list-ol" size={24} color="white"/>}></Footer>
         </>
       );

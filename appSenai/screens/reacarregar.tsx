@@ -1,9 +1,11 @@
 import React from 'react';
+import { StatusBar } from 'expo-status-bar';
 import { View, StyleSheet, ActivityIndicator, Image } from 'react-native';
 
 export default function Recarregar() {
   return (
     <View style={styles.container}>
+      <StatusBar style="light"/>
       <View style={styles.background}>
         <Image source={require('../assets/logo.png')} style={styles.logo} />
         <ActivityIndicator size="large" color="#fff" style={styles.loader} />
