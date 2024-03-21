@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
+import { Link } from 'expo-router';
 
 type btnProps={
   texto: string

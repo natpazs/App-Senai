@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Link } from 'expo-router';
 import Header from '../components/header';
 import Input from '../components/input';
 import Btn from '../components/btn';
@@ -13,8 +14,12 @@ export default function Login() {
             <Input label="Senha:" placeholder="Inisra sua senha:" secureTextEntry={true}></Input>
             <Btn texto="Fazer login"></Btn>
             <View style={styles.linksContainer}>
-                <TouchableOpacity><Text style={styles.link}>Cadastre-se</Text></TouchableOpacity>
-                <TouchableOpacity><Text style={styles.link}>Esqueceu a senha?</Text></TouchableOpacity>
+                <Link href="/Cadastro" asChild>
+                    <TouchableOpacity><Text style={styles.link}>Cadastre-se</Text></TouchableOpacity>
+                </Link>
+                <Link href="/RecuperarSenha" asChild>
+                    <TouchableOpacity><Text style={styles.link}>Esqueceu a senha?</Text></TouchableOpacity>
+                </Link>
             </View>
         </View>
       );
