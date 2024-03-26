@@ -14,7 +14,7 @@ export default function Cadastro() {
             <Input label="Telefone:" placeholder="Inisra seu telefone:"></Input>
             <Input label="Senha:" placeholder="Inisra sua senha:" secureTextEntry={true}></Input>
             <Input label="Confirmar senha:" placeholder="Inisra sua senha:" secureTextEntry={true}></Input>
-            <Btn texto="Cadastre-se"></Btn>
+            <Btn texto="Cadastre-se" href="/index"></Btn>
         </View>
       );
 };

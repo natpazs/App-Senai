@@ -12,7 +12,7 @@ export default function Login() {
             <Text style={styles.texto}>Faça Login para Acessar o Sistema!</Text>
             <Input label="Email:" placeholder="Inisra seu email:" ></Input>
             <Input label="Senha:" placeholder="Inisra sua senha:" secureTextEntry={true}></Input>
-            <Btn texto="Fazer login"></Btn>
+            <Btn texto="Entrar" href="drawer"></Btn>
             <View style={styles.linksContainer}>
                 <Link href="/Cadastro" asChild>
                     <TouchableOpacity><Text style={styles.link}>Cadastre-se</Text></TouchableOpacity>

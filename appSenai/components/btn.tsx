@@ -1,12 +1,18 @@
-import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
-import { Link } from 'expo-router';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { LinkProps } from 'expo-router/build/link/Link';
+import { Link } from 'expo-router/build/link/Link';
 
-type btnProps={
+
+interface LinkBtnProps extends LinkProps{
   texto: string
 }
-export default function Btn({texto}:btnProps){
+export default function Btn({texto, ...props}:LinkBtnProps){
     return(
-        <TouchableOpacity style={styles.btn}><Text style={styles.texto}>{texto}</Text></TouchableOpacity>
+      <Link {...props} asChild>
+        <TouchableOpacity style={styles.btn}>
+          <Text style={styles.texto}>{texto}</Text>
+        </TouchableOpacity>
+      </Link>
     )
 };
 

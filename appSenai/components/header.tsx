@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, } from 'react-native';
 
 type headerProps ={
@@ -10,7 +9,6 @@ type headerProps ={
 export default function Header({cor, texto}:headerProps) {
     return (
         <View style={[styles.container, { backgroundColor: cor }]}>
-            <StatusBar style="light"/>
             <Image style={styles.logo} source={require('../assets/logo.png')} />
             <Text style={styles.text}>{texto}</Text>
         </View>
