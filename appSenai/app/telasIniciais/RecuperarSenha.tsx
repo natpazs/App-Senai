@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
-import Header from '../components/header';
-import Input from '../components/input';
-import Btn from '../components/btn';
+import Header from '@comp/header';
+import Input from '@comp/input';
+import Btn from '@comp/btn';
 
 
 export default function RecuperarSenha() {

@@ -1,7 +1,7 @@
 import { ScrollView} from 'react-native';
-import Item from '../../../components/item';
-import Footer from '../../../components/footer';
-import Botao from '../../../components/botao';
+import Item from '@comp/item';
+import Footer from '@comp/footer';
+import Botao from '@comp/botao';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';

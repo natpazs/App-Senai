@@ -1,7 +1,7 @@
 import { ScrollView, View} from 'react-native';
-import Nav from '../components/nav';
-import Formulario from '../components/formulario';
-import Footer from '../components/footer';
+import Nav from '@comp/nav';
+import Formulario from '@comp/formulario';
+import Footer from '@comp/footer';
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';

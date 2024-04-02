@@ -7,7 +7,7 @@ export default function Recarregar() {
     <View style={styles.container}>
       <StatusBar style="light"/>
       <View style={styles.background}>
-        <Image source={require('../assets/logo.png')} style={styles.logo} />
+        <Image source={require('@assets/logo.png')} style={styles.logo} />
         <ActivityIndicator size="large" color="#fff" style={styles.loader} />
       </View>
     </View>

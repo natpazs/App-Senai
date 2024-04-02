@@ -9,7 +9,7 @@ type headerProps ={
 export default function Header({cor, texto}:headerProps) {
     return (
         <View style={[styles.container, { backgroundColor: cor }]}>
-            <Image style={styles.logo} source={require('../assets/logo.png')} />
+            <Image style={styles.logo} source={require('@assets/logo.png')} />
             <Text style={styles.text}>{texto}</Text>
         </View>
       );

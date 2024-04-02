@@ -1,5 +1,5 @@
 import { ScrollView,StyleSheet, View, Image} from 'react-native';
-import Footer from '../../../components/footer';
+import Footer from '@comp/footer';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 
@@ -9,7 +9,7 @@ export default function Scanner() {
         <>
             <ScrollView style={{flex: 1} }>
                 <View style={styles.container}>
-                    <Image style={styles.qrCode} source={require('../../../assets/qrCode.png')} />
+                    <Image style={styles.qrCode} source={require('@assets/qrCode.png')} />
                 </View>
             </ScrollView>
         </>

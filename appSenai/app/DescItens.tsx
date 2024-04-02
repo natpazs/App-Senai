@@ -1,8 +1,8 @@
 import { ScrollView,StyleSheet, View} from 'react-native';
-import Nav from '../components/nav';
-import Descrição from '../components/descrição';
-import Footer from '../components/footer';
-import Botao from '../components/botao';
+import Nav from '@comp/nav';
+import Descrição from '@comp/descrição';
+import Footer from '@comp/footer';
+import Botao from '@comp/botao';
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
