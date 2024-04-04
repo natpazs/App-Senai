@@ -1,4 +1,4 @@
-import Login from "./telasIniciais/Login";
+import Login from "./TelasIniciais/Login";
 
 export default function Index(){
     return <Login/>

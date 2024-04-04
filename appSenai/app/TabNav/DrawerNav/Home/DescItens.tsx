@@ -12,7 +12,6 @@ import { Ionicons } from '@expo/vector-icons';
 export default function DescItens() {
     return (
         <>
-            <Nav color="#FF0000" icone={<AntDesign name="arrowleft" size={24} color="white" />} texto = "Descrição do item" cor="#FFFFFF" icone2={<Ionicons name="reload" size={24} color="white" />}></Nav>
             <ScrollView style={{flex: 1} }>
                 <View style={styles.container}>
                     <Descrição titulo ="Nº do Inventário:" texto="957689"></Descrição>
@@ -23,7 +22,6 @@ export default function DescItens() {
                 </View>
             </ScrollView>
             <Botao icn={<MaterialCommunityIcons name="pencil-circle" size={60} color="#ff0000" />}/>
-            <Footer borda="#CBCBCB" cor="#ffffff" icone={<MaterialCommunityIcons name="camera-flip" size={24} color="#595959" />} icone2={<FontAwesome5 name="list-ol" size={24} color="#595959"/>}></Footer>
         </>
       );
 };
