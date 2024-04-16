@@ -1,23 +1,27 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Link } from 'expo-router';
-import Header from '../../components/header';
-import Input from '../../components/input';
-import Btn from '../../components/btn';
+import Header from '@comp/header';
+import Input from '@comp/input';
+import Btn from '@comp/btn';
+import { useColor } from '../../temas/Temas';
 
 
 export default function Login() {
+
+    const cores = useColor()
+
     return (
         <View>
-            <Header cor="#000000" texto="Login" ></Header>
+            <Header cor="#000000"texto="Login" ></Header>
             <Text style={styles.texto}>Faça Login para Acessar o Sistema!</Text>
             <Input label="Email:" placeholder="Inisra seu email:" ></Input>
             <Input label="Senha:" placeholder="Inisra sua senha:" secureTextEntry={true}></Input>
             <Btn texto="Entrar" href="TabNav"></Btn>
             <View style={styles.linksContainer}>
-                <Link href="telasIniciais/Cadastro" asChild>
+                <Link href="TelasIniciais/Cadastro" asChild>
                     <TouchableOpacity><Text style={styles.link}>Cadastre-se</Text></TouchableOpacity>
                 </Link>
-                <Link href="telasIniciais/RecuperarSenha" asChild>
+                <Link href="TelasIniciais/RecuperarSenha" asChild>
                     <TouchableOpacity><Text style={styles.link}>Esqueceu a senha?</Text></TouchableOpacity>
                 </Link>
             </View>
