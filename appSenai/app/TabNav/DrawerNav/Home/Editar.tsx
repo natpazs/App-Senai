@@ -9,7 +9,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 export default function Editar() {
     return (
         <>
-            <ScrollView style={{flex: 1}}>
+            <ScrollView style={{flex: 1, backgroundColor:"#FFFFFF"}}>
                 <Formulario label='Nº Inventário' ></Formulario>
                 <Formulario label='Descrição'></Formulario>
                 <Formulario label='Local'></Formulario>

@@ -1,14 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Text} from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity} from 'react-native';
+import { Link } from 'expo-router';
 
 
 export default function Item({...props}) {
     return (
-        <View style={styles.container}>
-            <StatusBar style="dark"/>
-            <Text style={styles.titulo}>{props.titulo}</Text>
-            <Text style={styles.texto}>{props.texto}</Text>
-        </View>
+        <Link href={props.link} asChild>
+            <TouchableOpacity style={styles.container}>
+                <StatusBar style="dark"/>
+                <Text style={styles.titulo}>{props.titulo}</Text>
+                <Text style={styles.texto}>{props.texto}</Text>
+            </TouchableOpacity>
+        </Link>
       );
     };
 

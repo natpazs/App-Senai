@@ -2,10 +2,10 @@ import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { LinkProps } from 'expo-router/build/link/Link';
 import { Link } from 'expo-router/build/link/Link';
 
-
 interface LinkBtnProps extends LinkProps{
   texto: string
 }
+
 export default function Btn({texto, ...props}:LinkBtnProps){
     return(
       <Link {...props} asChild>

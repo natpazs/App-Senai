@@ -12,7 +12,7 @@ import { Link } from 'expo-router';
 export default function DescItens() {
     return (
         <>
-            <ScrollView style={{flex: 1} }>
+            <ScrollView style={{flex: 1,backgroundColor:"#FFFFFF"}}>
                 <View style={styles.container}>
                     <Descrição titulo ="Nº do Inventário:" texto="957689"></Descrição>
                     <Descrição titulo ="Descrição:" texto="CADEIRA GIRATÓRIOA"></Descrição>
@@ -21,7 +21,7 @@ export default function DescItens() {
                     <Descrição titulo ="Data de Registro:" texto="05/03/2024"></Descrição>
                 </View>
             </ScrollView>
-            <Link href="Home/Editar" asChild>
+            <Link href="/TabNav/DrawerNav/Home/Editar" asChild>
                 <TouchableOpacity style={styles.icn}>
                     <MaterialCommunityIcons name="pencil-circle" size={60} color="#ff0000" />
                 </TouchableOpacity>

@@ -9,21 +9,22 @@ import { Link } from 'expo-router';
 export default function Inventario() {
     return (
         <>
-            <ScrollView style={{flex: 1}}>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
-                <Item titulo="956389" texto="CADEIRA  SENAI"></Item>
+            <ScrollView style={{flex: 1, backgroundColor:"#FFFFFF"}}>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
+                <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
             </ScrollView>
             <Link href="/TabNav/DrawerNav/Home/CadastroItem" asChild>
                 <TouchableOpacity style={styles.icn}>
