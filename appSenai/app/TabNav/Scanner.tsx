@@ -1,30 +1,55 @@
-import { ScrollView,StyleSheet, View, Image} from 'react-native';
-import Footer from '@comp/footer';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { FontAwesome5 } from '@expo/vector-icons';
-
+import React, { useState, useEffect, useRef } from 'react';
+import { StyleSheet, View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
+import { Camera } from 'expo-camera';
 
 export default function Scanner() {
-    return (
-        <>
-            <ScrollView style={{flex: 1} }>
-                <View style={styles.container}>
-                    <Image style={styles.qrCode} source={require('@assets/qrCode.png')} />
-                </View>
-            </ScrollView>
-        </>
-      );
-};
+  const camRef = useRef(null);
+  const [hasPermission, setHasPermission] = useState(null);
+
+  useEffect(() => {
+    (async () => {
+      const { status } = await Camera.requestPermissionsAsync();
+      setHasPermission(status === 'granted');
+    })();
+  }, []);
+
+  if (hasPermission === null) {
+    return <View />;
+  }
+
+  if (hasPermission === false) {
+    return <Text>Acesso negado!</Text>;
+  }
+
+  return (
+    <SafeAreaView style={styles.container}>
+      <Camera style={styles.camera} ref={camRef}></Camera>
+    </SafeAreaView>
+  );
+}
 
 const styles = StyleSheet.create({
-    container: {
-        width:"100%",
-        height: 525,
-        backgroundColor: "#F5F5F5",
-        justifyContent: "flex-end",
-        alignItems: "center"
-    },
-    qrCode: {
-        marginBottom: 40
-    }
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  camera: {
+    width: 450,
+    height: 450,
+  },
+  buttonContainer: {
+    position: 'absolute',
+    bottom: 20,
+    left: 20,
+  },
+  button: {
+    padding: 20,
+    backgroundColor: '#ffffff',
+    borderRadius: 10,
+  },
+  text: {
+    fontSize: 20,
+    color: '#000000',
+  },
 });

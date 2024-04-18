@@ -8,7 +8,7 @@ export default function Layout() {
       <Stack.Screen name='TelasIniciais/Cadastro' options={{headerTitle:"", headerTransparent: true, headerTintColor: "#ffffff", statusBarColor: "#FF0000"}}/>
       <Stack.Screen name='TelasIniciais/RecuperarSenha' options={{headerTitle:"", headerTransparent: true, headerTintColor: "#ffffff", statusBarColor: "#011E83"}}/>
       <Stack.Screen name='drawer' options={{headerShown: false}}/>
-      <Stack.Screen name="TabNav" options={{headerShown: false}}/>
+      <Stack.Screen name="TabNav" options={{headerShown: false, statusBarTranslucent:true}}/>
     </Stack>
    
   ) 

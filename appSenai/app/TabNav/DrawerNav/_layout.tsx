@@ -9,7 +9,9 @@ export default function layout() {
     return(
         <Drawer drawerContent={(...props) => (
             CustomDrawer(...props)
-        )}>
+        )} screenOptions={{
+            drawerInactiveTintColor: "#D9D9D9"
+        }}>
             <Drawer.Screen name="Home" options={{headerShown: false, drawerIcon: ({size, color}) =>(
                 <Entypo name="home" size={size} color={color} />
             )}}/>

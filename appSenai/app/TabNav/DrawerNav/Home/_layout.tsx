@@ -12,6 +12,7 @@ export default function layout() {
             }
 
         }} />
+        <Stack.Screen name="CadastroItem"/>
     </Stack>  
   ) 
 }
