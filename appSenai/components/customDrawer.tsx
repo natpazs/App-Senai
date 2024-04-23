@@ -1,10 +1,14 @@
 import {DrawerItem, DrawerItemList} from "@react-navigation/drawer";
 import drawer from "expo-router/drawer";
 import { View, Text, Image } from "react-native";
+import useColor from "../temas/Temas";
 
 export default function CustomDrawer(props: any) {
+
+    const cores = useColor()
+
     return(
-        <View style={{marginTop: 60}}>
+        <View style={{paddingTop: 60, backgroundColor: cores.bgPrimary, height:"100%"}}>
             <View style={{padding: 20, display: "flex", flexDirection: "row"}}>
                 <Image source={require('@assets/Perfil.png')}/>
                 <View style={{ marginLeft: 15, marginTop: 18}}>

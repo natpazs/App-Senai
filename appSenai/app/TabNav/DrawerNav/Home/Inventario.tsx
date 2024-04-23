@@ -5,11 +5,15 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { Link } from 'expo-router';
+import useColor from '../../../../temas/Temas';
 
 export default function Inventario() {
+
+    const cores = useColor()
+
     return (
         <>
-            <ScrollView style={{flex: 1, backgroundColor:"#FFFFFF"}}>
+            <ScrollView style={{flex: 1, backgroundColor: cores.bgPrimary}}>
                 <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
                 <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>
                 <Item link="/TabNav/DrawerNav/Home/DescItens" titulo="956389" texto="CADEIRA  SENAI"></Item>

@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
 import { Camera } from 'expo-camera';
+import useColor from '../../temas/Temas';
 
 export default function Scanner() {
   const camRef = useRef(null);
   const [hasPermission, setHasPermission] = useState(null);
+
+  const cores = useColor()
 
   useEffect(() => {
     (async () => {
@@ -22,9 +25,11 @@ export default function Scanner() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Camera style={styles.camera} ref={camRef}></Camera>
-    </SafeAreaView>
+    <View style={{backgroundColor: cores.bgPrimary, height:"100%"}}>
+      <SafeAreaView style={styles.container}>
+        <Camera style={styles.camera} ref={camRef}></Camera>
+      </SafeAreaView>
+    </View>
   );
 }
 
@@ -37,19 +42,5 @@ const styles = StyleSheet.create({
   camera: {
     width: 450,
     height: 450,
-  },
-  buttonContainer: {
-    position: 'absolute',
-    bottom: 20,
-    left: 20,
-  },
-  button: {
-    padding: 20,
-    backgroundColor: '#ffffff',
-    borderRadius: 10,
-  },
-  text: {
-    fontSize: 20,
-    color: '#000000',
-  },
+  }
 });
