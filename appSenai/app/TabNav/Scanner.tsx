@@ -5,13 +5,13 @@ import useColor from '../../temas/Temas';
 
 export default function Scanner() {
   const camRef = useRef(null);
-  const [hasPermission, setHasPermission] = useState(null);
+  const [hasPermission, setHasPermission] = useState(false);
 
   const cores = useColor()
 
   useEffect(() => {
     (async () => {
-      const { status } = await Camera.requestPermissionsAsync();
+      const { status } = await Camera.requestCameraPermissionsAsync();
       setHasPermission(status === 'granted');
     })();
   }, []);
@@ -41,6 +41,6 @@ const styles = StyleSheet.create({
   },
   camera: {
     width: 450,
-    height: 450,
+    height: 500,
   }
 });
