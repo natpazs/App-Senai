@@ -36,8 +36,8 @@ export default function Login() {
         <View style={{backgroundColor: cores.bgPrimary, height:"100%"}}>
             <Header cor={cores.tema === 'dark' ? cores.bgPrimary: '#000000'} texto="Login" ></Header>
             <Text style={styles.texto}>Faça Login para Acessar o Sistema!</Text>
-            <Input label="Email:" placeholder="Inisra seu email:" cor={cores}></Input>
-            <Input label="Senha:" placeholder="Inisra sua senha:" secureTextEntry={true} cor={cores}></Input>
+            <Input label="Email:" placeholder="Insira seu email:" cor={cores}></Input>
+            <Input label="Senha:" placeholder="Insira sua senha:" secureTextEntry={true} cor={cores}></Input>
             <Btn texto="Entrar" href="TabNav"></Btn>
             <View style={styles.linksContainer}>
                 <Link href="TelasIniciais/Cadastro" asChild>
