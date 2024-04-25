@@ -1,8 +1,5 @@
 import { ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import Item from '@comp/item';
-import Footer from '@comp/footer';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { FontAwesome5 } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 import useColor from '../../../../temas/Temas';

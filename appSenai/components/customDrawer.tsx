@@ -1,5 +1,4 @@
-import {DrawerItem, DrawerItemList} from "@react-navigation/drawer";
-import drawer from "expo-router/drawer";
+import {DrawerItemList} from "@react-navigation/drawer";
 import { View, Text, Image } from "react-native";
 import useColor from "../temas/Temas";
 

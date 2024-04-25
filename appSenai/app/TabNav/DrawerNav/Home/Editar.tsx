@@ -1,10 +1,5 @@
-import { ScrollView, View} from 'react-native';
-import Nav from '@comp/nav';
+import { ScrollView} from 'react-native';
 import Formulario from '@comp/formulario';
-import Footer from '@comp/footer';
-import { AntDesign } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { FontAwesome5 } from '@expo/vector-icons';
 import useColor from '../../../../temas/Temas';
 
 export default function Editar() {

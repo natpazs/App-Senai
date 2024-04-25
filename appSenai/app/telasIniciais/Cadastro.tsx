@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import Header from '@comp/header';
 import Input from '@comp/input';
 import Btn from '@comp/btn';
