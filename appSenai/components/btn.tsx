@@ -21,6 +21,7 @@ export default function Btn({texto, ...props}:LinkBtnProps){
       alignItems: "center",
       alignSelf: "center",
       borderRadius: 5,
+      marginBottom: 15
     },
     texto: {
       color : "#FFFFFF",

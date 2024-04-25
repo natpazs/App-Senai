@@ -19,7 +19,7 @@ export default function Input({label, ...props}:InputProps) {
         },
         text: {
             fontSize: 14,
-            marginBottom: 10,
+            marginBottom: 15,
             color: props.cor.textColorPrimary
         },
         input: {

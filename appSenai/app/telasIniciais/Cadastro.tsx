@@ -1,4 +1,4 @@
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import Header from '@comp/header';
 import Input from '@comp/input';
 import Btn from '@comp/btn';
@@ -10,7 +10,7 @@ export default function Cadastro() {
     const cores = useColor()
 
     return (
-        <View style={{backgroundColor: cores.bgPrimary, height:"100%"}}>
+        <ScrollView style={{backgroundColor: cores.bgPrimary, height:"100%"}}>
             <Header cor={cores.tema === 'dark' ? cores.bgPrimary: '#FF0000'} texto="Cadastre-se" ></Header>
             <Input label="Nome:" placeholder="Insira seu nome:"  cor={cores}></Input>
             <Input label="Sobrenome:" placeholder="Insira seu sobrenome:"  cor={cores}></Input>
@@ -19,6 +19,6 @@ export default function Cadastro() {
             <Input label="Senha:" placeholder="Insira sua senha:" secureTextEntry={true}  cor={cores}></Input>
             <Input label="Confirmar senha:" placeholder="Insira sua senha:" secureTextEntry={true}  cor={cores}></Input>
             <Btn texto="Cadastre-se" href="/TabNav"></Btn>
-        </View>
+        </ScrollView>
       );
 };
