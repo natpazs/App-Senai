@@ -7,12 +7,29 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { Link } from 'expo-router';
-
+import useColor from '../../../../temas/Temas';
 
 export default function DescItens() {
+
+    const cores = useColor()
+
+    const styles = StyleSheet.create({
+        icn: {
+            position: "absolute",
+            bottom: 80,
+            right: 20,
+            zIndex: 1
+        },
+        container: {
+            width:"100%",
+            height: 525,
+            backgroundColor: cores.tema === 'dark'? cores.bgPrimary: '#FBFBFB'
+        }
+    });
+
     return (
         <>
-            <ScrollView style={{flex: 1,backgroundColor:"#FFFFFF"}}>
+            <ScrollView style={{flex: 1,backgroundColor:cores.bgPrimary}}>
                 <View style={styles.container}>
                     <Descrição titulo ="Nº do Inventário:" texto="957689"></Descrição>
                     <Descrição titulo ="Descrição:" texto="CADEIRA GIRATÓRIOA"></Descrição>
@@ -30,17 +47,3 @@ export default function DescItens() {
         </>
       );
 };
-
-const styles = StyleSheet.create({
-    icn: {
-        position: "absolute",
-        bottom: 80,
-        right: 20,
-        zIndex: 1
-    },
-    container: {
-        width:"100%",
-        height: 525,
-        backgroundColor: "#F5F5F5"
-    }
-});

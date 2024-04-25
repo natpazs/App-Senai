@@ -1,12 +1,15 @@
 import { StyleSheet, Text,View, TextInput, TextInputProps } from "react-native";
 import { useState } from "react";
+import { Cores } from '../temas/Temas';
 
 interface InputProps extends TextInputProps{
     label: string
+    cor: Cores
 }
 
 export default function Formulario ({label, ...props}: InputProps){
-    const [hover, setHover] = useState("#5d5c5c")
+    const [hover, setHover] = useState(props.cor.inputTextColorPrimaryVariant)
+
 
     const styles = StyleSheet.create({
       container:{
@@ -32,11 +35,11 @@ export default function Formulario ({label, ...props}: InputProps){
         paddingStart: 5,
         paddingEnd: 10,
         color: hover,
-        backgroundColor: "#FFFFFF",
+        backgroundColor: props.cor.bgPrimary,
         zIndex: 1
       },
       asterisco:{
-        color: "#ff0000"
+        color: props.cor.bgSecundary
       },
     })
       
@@ -46,9 +49,9 @@ export default function Formulario ({label, ...props}: InputProps){
                 <Text style={styles.text}>{label} <Text style={styles.asterisco}>*</Text></Text>
             </View>
                 <TextInput {...props}  style={styles.container2} onFocus={()=>{
-                    setHover("#f39200")
+                    setHover(props.cor.inputBgHover)
                 }} onBlur={()=>{
-                    setHover("#5d5c5c")
+                    setHover(props.cor.inputTextColorPrimaryVariant)
                 }}/>
         </View>
     )

@@ -20,15 +20,15 @@ export default function layout() {
             }
         }} />
         <Stack.Screen name="CadastroItem" options={{headerTitle:"Cadastro de Itens", headerTitleAlign: 'center', headerTintColor:'#FFFFFF',
-          headerStyle: {backgroundColor: "#FF0000"},       
+          headerStyle: {backgroundColor: cores.bgSecundary},       
           headerRight: () => (<TouchableOpacity><AntDesign name="pluscircleo" size={24} color="white" /></TouchableOpacity>)
         }}/>
         <Stack.Screen name="DescItens" options={{headerTitle:"Descrição do Item", headerTitleAlign: 'center', headerTintColor:'#FFFFFF',
-          headerStyle: {backgroundColor: "#FF0000"},       
+          headerStyle: {backgroundColor: cores.bgSecundary},       
           headerRight: () => (<TouchableOpacity><MaterialIcons name="refresh" size={30} color="white"/></TouchableOpacity>)
         }}/>
         <Stack.Screen name="Editar" options={{headerTitle:"Editar", headerTitleAlign: 'center', headerTintColor:'#FFFFFF',
-          headerStyle: {backgroundColor: "#FF0000"},       
+          headerStyle: {backgroundColor: cores.bgSecundary},       
           headerRight: () => (<TouchableOpacity><AntDesign name="checkcircle" size={24} color="white" /></TouchableOpacity>)
         }}/>
     </Stack>

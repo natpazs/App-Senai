@@ -12,8 +12,8 @@ export default function CustomDrawer(props: any) {
             <View style={{padding: 20, display: "flex", flexDirection: "row"}}>
                 <Image source={require('@assets/Perfil.png')}/>
                 <View style={{ marginLeft: 15, marginTop: 18}}>
-                    <Text style={{fontWeight: "bold", fontSize: 16}}>Flavio Josefo</Text>
-                    <Text style={{color: "#595959"}}>flavio@gmail.com</Text>
+                    <Text style={{fontWeight: "bold", fontSize: 16, color: cores.inputTextColorPrimaryVariant}}>Flavio Josefo</Text>
+                    <Text style={{color: cores.inputTextColorPrimaryVariant}}>flavio@gmail.com</Text>
                 </View>
             </View>
             <DrawerItemList {...props}/>

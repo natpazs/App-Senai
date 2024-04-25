@@ -22,7 +22,7 @@ export default function RecuperarSenha() {
 
     return (
         <View style={{backgroundColor: cores.bgPrimary, height:"100%"}}>
-            <Header cor={cores.tema === 'light' ? cores.bgInfo: '#240707'} texto="Recuperação de senha" ></Header>
+            <Header cor={cores.tema === "dark" ? cores.bgPrimary:"#011E83"}  texto="Recuperação de senha" ></Header>
             <Text style={styles.texto}>Insira seu e-mail para recuperar a senha!</Text>
             <Input label="Email:" placeholder="Inisra seu email:" cor={cores}></Input>
             <Btn texto="Recuperar senha" href="TelasIniciais/Login" ></Btn>

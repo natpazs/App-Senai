@@ -5,16 +5,20 @@ import Footer from '@comp/footer';
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
+import useColor from '../../../../temas/Temas';
 
 export default function Editar() {
+
+    const cores = useColor()
+
     return (
         <>
-            <ScrollView style={{flex: 1, backgroundColor:"#FFFFFF"}}>
-                <Formulario label='Nº Inventário' ></Formulario>
-                <Formulario label='Descrição'></Formulario>
-                <Formulario label='Local'></Formulario>
-                <Formulario label='Responsável'></Formulario>
-                <Formulario label='Data de registro'></Formulario>
+            <ScrollView style={{flex: 1, backgroundColor: cores.bgPrimary}}>
+                <Formulario cor={cores} label='Nº Inventário' ></Formulario>
+                <Formulario cor={cores} label='Descrição'></Formulario>
+                <Formulario cor={cores} label='Local'></Formulario>
+                <Formulario cor={cores} label='Responsável'></Formulario>
+                <Formulario cor={cores} label='Data de registro'></Formulario>
             </ScrollView>
         </>
       );
